@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import './index.css'
 class TodoList extends Component {
   state = {
     value: '',
@@ -15,7 +16,7 @@ class TodoList extends Component {
     const { value } = this.state
     if (e.keyCode === 13 && value) {
       this.props.addUndoItem(value)
-      this.setState({value: ''})
+      this.setState({ value: '' })
     }
   }
 
@@ -24,7 +25,17 @@ class TodoList extends Component {
 
     return (
       <div className="header">
-        <input type="text" data-test="input" value={value} onChange={this.handleInputChange} onKeyUp={this.handleInputKeyUp} />
+        <div className="header-content">
+          TodoList
+          <input
+            className="header-input"
+            type="text"
+            data-test="input"
+            value={value}
+            onChange={this.handleInputChange}
+            onKeyUp={this.handleInputKeyUp}
+          />
+        </div>
       </div>
     );
   }

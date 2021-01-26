@@ -1,10 +1,12 @@
 import React from 'react'
 import Header from '../../header'
 
-import Enzyme, { shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { shallow } from 'enzyme';
 
-Enzyme.configure({ adapter: new Adapter() });
+// it('Header 快照', () => {
+//   const wrapper = shallow(<Header />)
+//   expect(wrapper).toMatchSnapshot()
+// });
 
 it('Header 组件包含一个 input 框', () => {
   const wrapper = shallow(<Header />)

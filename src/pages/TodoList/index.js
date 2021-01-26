@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Header from './header'
 
+import './index.css'
+
 class TodoList extends Component {
   state = {
     undoList: []

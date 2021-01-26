@@ -12,7 +12,7 @@ module.exports = {
   // 测试环境搭建好后执行的文件
   "setupFilesAfterEnv": [
     "<rootDir>/src/setupTests.js",
-    './node_modules/jest-enzyme/lib/index.js'
+    './node_modules/jest-enzyme/lib/index.js',
   ],
   "testMatch": [
     "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",

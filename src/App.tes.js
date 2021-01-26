@@ -7,7 +7,7 @@ import Adapter from 'enzyme-adapter-react-16';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-test('renders learn react link', () => {
+test('component App', () => {
   // const div = document.createElement('div')
   // ReactDOM.render(<App />, div)
   // const app = div.getElementsByClassName('App')

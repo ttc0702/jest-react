@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import './index.css'
-class TodoList extends Component {
+class Header extends Component {
   state = {
     value: '',
   }
@@ -41,4 +41,4 @@ class TodoList extends Component {
   }
 }
 
-export default TodoList;
+export default Header;

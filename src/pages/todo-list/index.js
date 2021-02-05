@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from './header'
+import UndoList from './undo-list'
 
 import './index.css'
 
@@ -19,6 +20,7 @@ class TodoList extends Component {
     return (
       <div className="todo-list">
         <Header addUndoItem={this.addUndo} />
+        <UndoList />
         {
           undoList.map((item, index) => {
             return (
